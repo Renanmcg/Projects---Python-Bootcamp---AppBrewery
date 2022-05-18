@@ -1,0 +1,50 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+print("The first thing to do is to begin. You must now decide wherever you'll go now.")
+
+choice1 = input(" take the left and enter in the forest or go ahead to the plains?[Type L for left, and A for ahead]")
+if choice1 in 'Aa':
+  print('going to the plain you found a farm.')
+  choice2 = input('What will you do? continue searching[s] or enter in the farm[e]?')
+  if choice2 in 's':
+    print('going ahead on the plain you find a lake with trees around and some rocks.')
+    choice3 = input('Where to go? Ahead[a] or to the lake[l]?')
+    if choice3 in 'l':
+      print('Coming near the lake you see some stone together, and a cave.')
+      choice4 = input('What to do now? see what is under the stone[s] or enter the cave[c].')
+      if choice4 in 's':
+        print('under the stones is a cross. go on! Dig! Take the treasure!')
+      else:
+        print('A vampire attacked you. you are one of then now.')
+    else:
+       print('You walked all the day and have not found the treasure.')
+  else:
+    print('You got into the farm, it seemed that none was there, you start looking the object...the farmer arrive and thinking you are a thief, kill you.')
+else:
+  print('Going into the forest you walked a long way, the night came, you were lost and then a wolf killed you.')
