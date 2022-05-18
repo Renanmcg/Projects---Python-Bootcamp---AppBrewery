@@ -1,0 +1,10 @@
+# 🚨 Don't change the code below 👇
+age = input("What is your current age?")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+days90y = 32850
+weeks90y = 4680
+months90y = 1080
+
+print(f"You have {days90y - int(age) * 365} days, {weeks90y - int(age) * 52} weeks and {months90y - int(age) * 12} months left.")
