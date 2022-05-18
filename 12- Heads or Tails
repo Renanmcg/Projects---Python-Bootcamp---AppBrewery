@@ -1,0 +1,27 @@
+import random
+
+# 🚨 Don't change the code below 👇
+test_seed = int(input("Create a seed number: "))
+random.seed(test_seed)
+# 🚨 Don't change the code above 👆 It's only for testing your code.
+
+# Write the rest of your code below this line 👇
+
+'''player = int(input('Choose! heads[1] or tails[0]?'))
+computer = random.randint(0, 1)
+throw = random.randint(0, 1)
+if throw == 0:
+    print('Tails')
+else:
+    print('Heads')
+
+if throw == player:
+    print('you win!')
+else:
+    print('The computer wins.')'''
+
+random_side = random.randint(0, 1)
+if random_side == 1:
+  print("Heads")
+else:
+  print("Tails")
