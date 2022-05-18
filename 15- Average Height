@@ -1,0 +1,21 @@
+# 🚨 Don't change the code below 👇
+student_heights = input("Input a list of student heights ").split()
+#attention to the .split() it make a list from the simple string variable.
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# 🚨 Don't change the code above 👆
+
+
+#Write your code below this row 👇
+
+#print(round(sum(student_heights)/len(student_heights)))
+total_heights = 0
+for height in student_heights:
+    total_heights += height
+
+number_heights = 0
+for each in student_heights:
+    number_heights += 1
+
+average = total_heights/number_heights
+print(round(average))
