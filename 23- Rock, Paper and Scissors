@@ -1,0 +1,45 @@
+images = ['''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+,'''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+,'''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+''']
+
+#Write your code below this line 👇
+from random import randint
+player = int(input('Choose! Rock[0], paper[1] or scissors[2]?'))
+computer = randint(0, 2)
+if player == computer:
+  print(images[player], images[computer], 'No winner!')
+if player == 0 and computer == 2:
+  print(images[player], images[computer], 'You win!')
+if player == 0 and computer == 1:
+  print(images[player], images[computer], 'You lose!')
+if player == 1 and computer == 0:
+  print(images[player], images[computer], 'You win!')
+if player == 1 and computer == 2:
+  print(images[player], images[computer], 'You lose!')
+if player == 2 and computer == 1:
+  print(images[player], images[computer], 'You win!')
+if player == 2 and computer == 0:
+  print(images[player], images[computer], 'You lose!')
