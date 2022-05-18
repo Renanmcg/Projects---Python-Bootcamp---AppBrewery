@@ -1,0 +1,31 @@
+def add(n1, n2):
+  return n1 + n2
+
+def subtract(n1, n2):
+  return n1 - n2
+
+def mult(n1, n2):
+  return n1 * n2
+
+def div(n1, n2):
+  return n1 / n2
+
+operations = {'+':add, '-':subtract, '*':mult, '/':div}
+
+num1 = int(input("Type the first number: "))
+num2 = int(input("Type the second number: "))
+for symbol in operations:
+  print(symbol)
+choice = input('Choose an operation from the line above: ')
+#if choice == "+":
+ # answer = add(num1, num2)
+#if choice == "-":
+ # answer = subtract(num1, num2)
+#if choice == "*":
+ # answer = mult(num1, num2)  
+#if choice == "/":
+ # answer = div(num1, num2)'''
+calculation_function = operations[choice]
+answer = calculation_function(num1, num2)
+
+print(f'{num1} {choice} {num2} = {answer}')
