@@ -1,0 +1,8 @@
+#Write your code below this row 👇
+total = 0
+for number in range(0, 101):
+    if number % 2 ==0:
+        total += number
+print (total)
+
+#An other way is put a step 2 and delete the if...
