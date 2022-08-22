@@ -1,0 +1,9 @@
+body{background-color: #FAE3C1}
+hr{
+  border-color: green;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  width: 5%;
+}
+/* The logic is the same to change the h1 or h2 etc tags color: h1 { color: green;}-->*/
